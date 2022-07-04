@@ -1,0 +1,46 @@
+﻿ 
+ public void Populate_Buttons()
+        {
+            SortedList<decimal, string> numberList = new SortedList<decimal, string>();
+
+            string[] arrayAuth = new string[10];
+            decimal[] arrayNumbers = new decimal[10];
+
+            Random randomNumbers = new Random();
+            Random randomLetters = new Random();
+           
+            int length = 3;     
+            decimal numbers;
+                       
+            for (int i = 0; i < arrayNumbers.Length; i++)
+            {
+                //Picks a random number from 0 to 1000 including numbers with up to 2 decimal places.
+                //Decimal places can be increased as needed.
+                numbers = (decimal)randomNumbers.Next(100_000) / 100m;
+                arrayNumbers[i] = numbers;
+
+                //Pick 3 random letters from the alphabet and adds it to the arrayAuth array
+                const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                arrayAuth[i] = new string(Enumerable.Repeat(chars, length).Select(s => s[randomLetters.Next(s.Length)]).ToArray());
+                
+                numberList.Add(arrayNumbers[i], arrayAuth[i]);
+            }
+            foreach (KeyValuePair<decimal, string> kvp in numberList)
+            {
+                richTextBox1.Text = richTextBox1.Text + "\n " + kvp.Key + " " + kvp.Value;
+            }
+
+            //Making use of the arrays to ensure that the buttons are always random.
+            btn1.Text = arrayNumbers[0].ToString() + "\n " + arrayAuth[0].ToString();
+            btn2.Text = arrayNumbers[1].ToString() + "\n " + arrayAuth[1].ToString();
+            btn3.Text = arrayNumbers[2].ToString() + "\n " + arrayAuth[2].ToString();
+            btn4.Text = arrayNumbers[3].ToString() + "\n " + arrayAuth[3].ToString();
+            btn5.Text = arrayNumbers[4].ToString() + "\n " + arrayAuth[4].ToString();
+            btn6.Text = arrayNumbers[5].ToString() + "\n " + arrayAuth[5].ToString();
+            btn7.Text = arrayNumbers[6].ToString() + "\n " + arrayAuth[6].ToString();
+            btn8.Text = arrayNumbers[7].ToString() + "\n " + arrayAuth[7].ToString();
+            btn9.Text = arrayNumbers[8].ToString() + "\n " + arrayAuth[8].ToString();
+            btn10.Text = arrayNumbers[9].ToString() + "\n " + arrayAuth[9].ToString();
+        }
+        -------------------------------------------------------------------------------------------------------------------------------------
+

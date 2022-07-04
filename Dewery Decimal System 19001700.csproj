@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E68964A-5CDB-4BDF-8A85-92528B5A0795}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dewery_Decimal_System_19001700</RootNamespace>
+    <AssemblyName>Dewery Decimal System 19001700</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Books.cs" />
+    <Compile Include="Finding_Call_Numbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finding_Call_Numbers.Designer.cs">
+      <DependentUpon>Finding_Call_Numbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Identifying_Areas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Identifying_Areas.Designer.cs">
+      <DependentUpon>Identifying_Areas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Replaceing_Books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Replaceing_Books.Designer.cs">
+      <DependentUpon>Replaceing_Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Teaching_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Teaching_Area.Designer.cs">
+      <DependentUpon>Select_Teaching_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Finding_Call_Numbers.resx">
+      <DependentUpon>Finding_Call_Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Identifying_Areas.resx">
+      <DependentUpon>Identifying_Areas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Replaceing_Books.resx">
+      <DependentUpon>Replaceing_Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Teaching_Area.resx">
+      <DependentUpon>Select_Teaching_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Differnt Methods To Use\Methods Variations.txt" />
+    <None Include="Resources\Light greean air no water mark.jpg" />
+    <None Include="Resources\Light greean air.jpg" />
+    <None Include="Resources\Earthy brown light.png" />
+    <None Include="Resources\Breath of fresh air.png" />
+    <None Include="Resources\Light Brown Gradient.jpg" />
+    <None Include="Resources\Natural Brown gradient.png" />
+    <None Include="Resources\73-light-green-gradient.jpg" />
+    <None Include="Resources\Nezuko.gif" />
+    <None Include="Resources\Gura GIf.gif" />
+    <None Include="Resources\Tanjiro.gif" />
+    <None Include="Resources\Nagatoro.gif" />
+    <None Include="Resources\Mikasa.gif" />
+    <None Include="Resources\Kiara.gif" />
+    <None Include="Resources\Megumin.gif" />
+    <None Include="Resources\Nanachi.gif" />
+    <None Include="Resources\Goku.gif" />
+    <None Include="Resources\Gawr Gura.jpg" />
+    <None Include="Resources\002.png" />
+    <None Include="Resources\Shiro.jpg" />
+    <None Include="Resources\Levi.png" />
+    <None Include="Resources\Mai Sakurajima.jpg" />
+    <None Include="Resources\Rem.png" />
+    <None Include="Resources\Inosuke.jpg" />
+    <None Include="Resources\Asuna.jpg" />
+    <None Include="Resources\Nyan cat.png" />
+    <None Include="Resources\Spine 7.png" />
+    <None Include="Resources\Spine 6.png" />
+    <None Include="Resources\Spine 5.png" />
+    <None Include="Resources\Spine 4.png" />
+    <None Include="Resources\Spine 3.png" />
+    <None Include="Resources\Spine 2.png" />
+    <None Include="Resources\Master.png" />
+    <None Include="Resources\Diamond.png" />
+    <None Include="Resources\Platinum.png" />
+    <None Include="Resources\Gold.png" />
+    <None Include="Resources\Silver.png" />
+    <None Include="Resources\Bronze.png" />
+    <None Include="Resources\Unknown.jpg" />
+    <None Include="Resources\Mario coin.png" />
+    <None Include="Resources\Spine 1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
